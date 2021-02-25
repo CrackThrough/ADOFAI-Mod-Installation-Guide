@@ -9,13 +9,31 @@
 
 ## 개발 환경 만들기
 
-여기서는 [Visual Studio 2019](https://visualstudio.microsoft.com/) IDE를 기준으로 설명합니다. 만약 다른 IDE를 사용중이시라면 추가 Pull Request를 올려주세요.
+여기서는 [Visual Studio 2019](https://visualstudio.microsoft.com/) IDE와 [JetBrains Rider](https://www.jetbrains.com/rider/) IDE를 기준으로 설명합니다. 만약 다른 IDE를 사용중이시라면 추가 Pull Request를 올려주세요.
+
+### [Visual Studio 2019](https://visualstudio.microsoft.com/)
 
 1. [빈 C# 프로젝트를 생성](https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-projects-solutions?view=vs-2019)합니다.
 2. [필요한 Reference를 추가](https://docs.microsoft.com/en-us/visualstudio/ide/managing-references-in-a-project?view=vs-2019)합니다.
     * UnityModManager/0Harmony.dll
     * UnityModManager/UnityModManager.dll
     * A Dance of Fire and Ice_Data/Managed/Unity*.dll
+    * A Dance of Fire and Ice_Data/Managed/RDTools.dll
+    * A Dance of Fire and Ice_Data/Managed/Assembly-CSharp.dll
+    * A Dance of Fire and Ice_Data/Managed/Assembly-CSharp-firstpass.dll
+
+### [JetBrains Rider](https://www.jetbrains.com/rider/)
+
+1. [빈 .NET Class Library를 생성](https://www.jetbrains.com/help/rider/Creating_and_Opening_Projects_and_Solutions.html)
+    * Type은 Class Library
+    * Language는 C#
+    * Framework는 .Net Framework v4.8
+    * Git 등 버전 관리 시스템(VCS) 는 자유롭게
+2. [필요한 Reference를 추가](https://www.jetbrains.com/help/rider/Extending_Your_Solution.html#project_assembly_references)
+    * UnityModManager/0Harmony.dll
+    * UnityModManager/UnityModManager.dll
+    * A Dance of Fire and Ice_Data/Managed/Unity*.dll
+    * A Dance of Fire and Ice_Data/Managed/RDTools.dll
     * A Dance of Fire and Ice_Data/Managed/Assembly-CSharp.dll
     * A Dance of Fire and Ice_Data/Managed/Assembly-CSharp-firstpass.dll
 
