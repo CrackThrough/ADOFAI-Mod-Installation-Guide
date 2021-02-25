@@ -24,12 +24,12 @@
 
 ### [JetBrains Rider](https://www.jetbrains.com/rider/)
 
-1. [빈 .NET Class Library를 생성](https://www.jetbrains.com/help/rider/Creating_and_Opening_Projects_and_Solutions.html)
+1. [빈 .NET Class Library를 생성](https://www.jetbrains.com/help/rider/Creating_and_Opening_Projects_and_Solutions.html)합니다.
     * Type은 Class Library
     * Language는 C#
     * Framework는 .Net Framework v4.8
-    * Git 등 버전 관리 시스템(VCS) 는 자유롭게
-2. [필요한 Reference를 추가](https://www.jetbrains.com/help/rider/Extending_Your_Solution.html#project_assembly_references)
+    * Git 등 버전 관리 시스템(VCS) 는 자유롭게 설정하시면 됩니다.
+2. [필요한 Reference를 추가](https://www.jetbrains.com/help/rider/Extending_Your_Solution.html#project_assembly_references)합니다.
     * UnityModManager/0Harmony.dll
     * UnityModManager/UnityModManager.dll
     * A Dance of Fire and Ice_Data/Managed/Unity*.dll
