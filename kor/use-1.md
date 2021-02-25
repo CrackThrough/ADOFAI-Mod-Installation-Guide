@@ -20,7 +20,7 @@
     * `Installation Method` 그룹 이내에서 `Assembly`를 선택해주세요.
     * `Install` 버튼을 누르신 후 얼불춤을 실행하시고 메모장에 오류가 뜨는지 확인해보세요. 오류가 뜬다면 뭔가 잘못 설정한게 있는지 확인해주세요. 만약 관련해 도움이 필요하다면 언제든지 [모딩 커뮤니티 디스코드](https://discord.gg/AGFXhCfyE5)를 참여해 도움을 받을 수 있습니다.
     * 글로 이해가 어려우시다면 아래 사진을 참고해보세요. <color style="color: #f00">빨강</color> → <color style="color: #00f">파랑</color> → <color style="color: #090">초록</color> 순입니다.
-    ![](../resources/1/image1.png)
+    ![](../resources/use-1/image1.png)
 
 <!-- Additonal Info -->
 ### 추가 정보
@@ -75,3 +75,5 @@
 UnityModManager에 등록된 게임이 아니라서 본인이 직접 게임을 등록해야 하는 경우가 있습니다.
 
 이런 경우엔 다른 게임의 등록된 데이터를 복제하고 게임에 맞춰서 값을 다르게 하면 됩니다.
+
+## 계속 진행하시려면 다음 페이지를 읽어주세요.
