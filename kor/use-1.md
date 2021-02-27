@@ -1,5 +1,5 @@
 # 한국어 모딩 가이드
-<ins>[[ < 이전 페이지 ]](./main.md)</ins> <ins>[[ 다음 페이지 > ]](./2.md)</ins>
+<ins>[[ < 이전 페이지 ]](./main.md)</ins> <ins>[[ 다음 페이지 > ]](./use-2.md)</ins>
 
 ## UnityModManager 설치 방법
 
