@@ -12,9 +12,7 @@
    - Click `Slow Download`.
 2. Unzip the downloaded `UnityModManager.zip`.
    - **Do not** unzip the file inside ADOFAI's directory!
-3. If needed, edit the `UnityModManagerConfig.xml` file based on [your game's version](#How-to-check-your-games-version) and execute the `UnityModManager.exe` file.
-   - If you are currently on the release branch of ADOFAI, you must edit the `UnityModManagerConfig.xml` file. [Alternatively, you can download a pre-edited version of the file.](https://drive.google.com/file/d/1BZ6XJwMnb9KsKtLcuQ5JctRs81nw_60V/view?usp=sharing) Don't forget to replace the original file!
-   - If you want to edit the file by yourself, you can read the [Additional Informations - File Editing](#File-Editing) section below.
+3. If needed, [edit](#File-Editing) the `UnityModManagerConfig.xml` file based on [your game's version](#How-to-check-your-games-version) and execute the `UnityModManager.exe` file.
 4. Configure `UnityModManager`.
    - Click the `Install` tab.
    - Click the dropdown next to the `Game` text, and select `A Dance of Fire and Ice`.
@@ -41,7 +39,7 @@ For the latest version of ADOFAI, press `Esc` on main screen.
 #### File Editing
 
 **Case 1:**
-(Last checked 25/2/2021) There is a case you should edit the `UnityModManagerConfig.xml` file because of code differences between the beta(`1.11.3 r70~`) and release(`v1.11.1 r68`) versions.
+(Last checked 25/2/2021) There is a case you should edit the `UnityModManagerConfig.xml` file because of code differences between the current(`1.11.3 r70~`) and past(`v1.11.1 r68`) versions.
 
 [Click here to check your game's version.](#How-to-check-your-games-version)
 
@@ -55,7 +53,7 @@ For the latest version of ADOFAI, press `Esc` on main screen.
 
 Find the lines with above contents, and edit the `StartingPoint` and `UIStartingPoint` inside.
 
-With version `r68`, use the below settings.
+With version `r68` and below, use the below settings.
 
 ```xml
 <StartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:Before</StartingPoint>
@@ -86,6 +84,8 @@ This is preview of your settings. Note that `your settings value..` is not the a
 ```
 
 If you don't know how this XML format works, **try not to put settings value in the comments.**
+
+[Alternatively, you can download a pre-edited version of the file.](https://drive.google.com/file/d/1BZ6XJwMnb9KsKtLcuQ5JctRs81nw_60V/view?usp=sharing)
 
 **Case 2:**
 If the game is not added in UnityModManager, you have to add it by yourself.

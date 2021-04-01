@@ -11,9 +11,7 @@
     * `Slow Download` 버튼을 클릭하세요.
 2. 다운받은 `UnityModManager.zip` 파일을 압축 해제하세요.
     * **절대로** 얼불춤 폴더 내에서 압축 해제하시면 안됩니다!
-3. 필요한 경우 [자신의 게임 버전](#게임-버전-확인)에 맞게 `UnityModManagerConfig.xml` 파일을 수정하시고, 압축 푼 폴더 안에 있는 `UnityModManager.exe` 파일을 실행하세요.
-    * 지금 만약 당신이 정식 버전을 사용하신다면 무조건 `UnityModManagerConfig.xml` 파일을 수정하셔야 합니다. [혹은 이미 여기서 수정된 파일을 다운로드할 수 있습니다.](https://drive.google.com/file/d/1BZ6XJwMnb9KsKtLcuQ5JctRs81nw_60V/view?usp=sharing) 수정된 파일을 받으시고 기존 파일을 덮어쓰기 하는 것을 잊지 마세요!
-    * 만약 직접 수정하고 싶으시다면 밑의 [추가 정보 - 파일 수정 항목](#파일-수정)을 참조하시길 바랍니다.
+3. 필요한 경우 [자신의 게임 버전](#게임-버전-확인)에 맞게 `UnityModManagerConfig.xml` 파일을 [수정](#파일-수정)하시고, 압축 푼 폴더 안에 있는 `UnityModManager.exe` 파일을 실행하세요.
 4. `UnityModManager` 프로그램을 설정해 주세요.
     * `Install` 탭을 클릭하세요.
     * `Game` 텍스트 옆에 있는 드롭다운을 클릭하시고 `A Dance of Fire and Ice`를 선택하세요. (다른 게임일 경우 다른 게임의 이름을 선택하시면 됩니다.)
@@ -38,7 +36,7 @@
 #### 파일 수정
 
 **사례 1:**
-(2021년 2월 25일 기준) 베타 버전(`1.11.3 r70`) 과 정식 버전(`1.11.1 r68`)의 게임 코드가 달라서 파일을 수정해야 하는 경우가 있습니다. [여기를 누르시면 게임 내에서 버전을 보는 방법을 알려드립니다.](#게임-버전-확인)
+(2021년 2월 25일 기준) 현재 버전과 과거 버전(`1.11.1 r68 이하`)의 게임 코드가 달라서 파일을 수정해야 하는 경우가 있습니다. [여기를 누르시면 게임 내에서 버전을 보는 방법을 알려드립니다.](#게임-버전-확인)
 
 수정해야 할 대상은 `UnityModManagerConfig.xml` 파일입니다.
 ```xml
@@ -58,7 +56,7 @@
 <UIStartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:After</UIStartingPoint>
 ```
 
-버전 `r70`부터는 설정을 다음과 같이 적용해야 합니다. (이게 기본값이므로 `r70` 및 그 이후 버전을 사용하시는 분들은 설정을 바꾸지 않아도 될겁니다.)
+버전 `r70`부터는 설정을 다음과 같이 적용해야 합니다. (<ins>이게 기본값이므로 `r70` 및 그 이후 버전을 사용하시는 분들은 설정을 바꾸지 않아도 될겁니다.</ins>)
 
 ```xml
 <StartingPoint>[Assembly-CSharp.dll]ADOStartup.Startup:Before</StartingPoint>
@@ -81,6 +79,8 @@
 ```
 
 만약 이 프로그램이 어떻게 작동하는지 정확히 알지 못하신다면, **절대 주석 안에 설정을 쓰지 않도록 주의하십시오.**
+
+[혹은 이미 여기서 수정된 파일을 다운로드할 수 있습니다.](https://drive.google.com/file/d/1BZ6XJwMnb9KsKtLcuQ5JctRs81nw_60V/view?usp=sharing)
 
 **사례 2:**
 UnityModManager에 등록된 게임이 아니라서 본인이 직접 게임을 등록해야 하는 경우가 있습니다.
