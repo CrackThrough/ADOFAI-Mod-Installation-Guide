@@ -87,6 +87,8 @@ If you don't know how this XML format works, **try not to put settings value in 
 
 [Alternatively, you can download a pre-edited version of the file.](https://drive.google.com/file/d/1BZ6XJwMnb9KsKtLcuQ5JctRs81nw_60V/view?usp=sharing)
 
+__**Also, You are REQUIRED to restart your UnityModManager after making changes to your file.**__
+
 **Case 2:**
 If the game is not added in UnityModManager, you have to add it by yourself.
 

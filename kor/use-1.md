@@ -56,7 +56,7 @@
 <UIStartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:After</UIStartingPoint>
 ```
 
-버전 `r70`부터는 설정을 다음과 같이 적용해야 합니다. (<ins>이게 기본값이므로 `r70` 및 그 이후 버전을 사용하시는 분들은 설정을 바꾸지 않아도 될겁니다.</ins>)
+버전 `r69`부터는 설정을 다음과 같이 적용해야 합니다. (<ins>이게 기본값이므로 `r69` 및 그 이후 버전을 사용하시는 분들은 설정을 바꾸지 않아도 될겁니다.</ins>)
 
 ```xml
 <StartingPoint>[Assembly-CSharp.dll]ADOStartup.Startup:Before</StartingPoint>
@@ -81,6 +81,8 @@
 만약 이 프로그램이 어떻게 작동하는지 정확히 알지 못하신다면, **절대 주석 안에 설정을 쓰지 않도록 주의하십시오.**
 
 [혹은 이미 여기서 수정된 파일을 다운로드할 수 있습니다.](https://drive.google.com/file/d/1BZ6XJwMnb9KsKtLcuQ5JctRs81nw_60V/view?usp=sharing)
+
+__**또한, 파일을 교체하시거나 수정하신 이후 UnityModManager를 무조건 껐다 켜야 함을 숙지해 주세요.**__
 
 **사례 2:**
 UnityModManager에 등록된 게임이 아니라서 본인이 직접 게임을 등록해야 하는 경우가 있습니다.
