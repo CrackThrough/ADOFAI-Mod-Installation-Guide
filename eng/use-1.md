@@ -43,6 +43,12 @@ For the latest version of ADOFAI, press `Esc` on main screen.
 
 [Click here to check your game's version.](#How-to-check-your-games-version)
 
+   Note! Linux users should download the `mono` package to use for UnityModManager, and run it from the terminal with 
+```shell
+mono /path/to/UnityModManager.exe
+```
+Do not use sudo before mono, as this will create problems!
+Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loading. (I think those who dont use the steam version may be able to use WINE-GE)
 ```xml
 <GameInfo Name="A Dance of Fire and Ice">
 
