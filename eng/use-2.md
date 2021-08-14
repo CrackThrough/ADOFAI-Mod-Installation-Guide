@@ -13,6 +13,9 @@
    - If you still don't get the OK text, there's a high chance that it's a problem of the mod's file itself. Try contacting the mod developer or ask in the [ADOFAI Modding Community Discord](https://discord.gg/AGFXhCfyE5).
 5. If there is any update for the mod, right click the mod and click `Update to vX.X.X`. If the mod's latest version cannot be checked via `UnityModManager`, you need to download the updated .zip by yourself and apply it again.
 
+  Linux users; If ADOFAI-Tweaks (or any mod) is reporting it cant read a DLL, use Proton-GE and manually re-extract the dll's it uses in
+`/[where steam is installed]/Steam/steamapps/common/A Dance Of Fire And Ice/Mods/AdofaiTweaks [or another mod]`
+
 The image below shows what `UnityModManager` should look like after installing a few mods.
 
 ![](../resources/use-2/image1.png)
@@ -24,6 +27,7 @@ If the mod supports custom settings in `UnityModManager`, you can press `Ctrl + 
 ![](../resources/use-2/image2.png)
 
 Some mods may not have their settings in `UnityModManager`'s settings menu. You should read any instructions posted along with the mod file for how to change the settings.
+   
 
 ### Updating the mod
 
