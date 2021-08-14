@@ -5,3 +5,4 @@
 ### Contribution
 
 Thanks to [PizzaLovers007](https://github.com/PizzaLovers007) for helping my translations!
+[Gotchfutchian] For adding some Linux related help, if it dosent work for your distro feel free to open an issue.
