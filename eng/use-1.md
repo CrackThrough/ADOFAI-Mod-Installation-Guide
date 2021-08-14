@@ -21,7 +21,12 @@
    - After clicking the `Install` button, please check if notepad pops up after executing the game. If notepad pops up, it means something went wrong while editing `UnityModManagerConfig.xml`. If you can't see what's wrong and need help, you can always join the [ADOFAI Modding Community Discord](https://discord.gg/AGFXhCfyE5) and ask for help.
    - If you are having a hard time understanding, you can follow the same steps using image below. The correct sequence is Red → Blue → Green if you can't read small numbers well.
      ![](../resources/use-1/image1.png)
-
+   Note! Linux users should download the `mono` package to use for UnityModManager, and run it from the terminal with 
+```shell
+mono /path/to/UnityModManager.exe
+```
+Do not use sudo before mono, as this will create problems!
+Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loading. (I think those who dont use the steam version may be able to use WINE-GE)
 ---
 
 <!-- Additional Info -->
@@ -43,12 +48,7 @@ For the latest version of ADOFAI, press `Esc` on main screen.
 
 [Click here to check your game's version.](#How-to-check-your-games-version)
 
-   Note! Linux users should download the `mono` package to use for UnityModManager, and run it from the terminal with 
-```shell
-mono /path/to/UnityModManager.exe
-```
-Do not use sudo before mono, as this will create problems!
-Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loading. (I think those who dont use the steam version may be able to use WINE-GE)
+
 ```xml
 <GameInfo Name="A Dance of Fire and Ice">
 
