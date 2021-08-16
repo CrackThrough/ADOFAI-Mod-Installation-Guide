@@ -22,7 +22,15 @@
    - If you are having a hard time understanding, you can follow the same steps using image below. The correct sequence is Red → Blue → Green if you can't read small numbers well.
      ![](../resources/use-1/image1.png)
 
----
+   
+   Note! Linux users should download the `mono` package to use for UnityModManager, and run it from the terminal with 
+```shell
+mono /path/to/UnityModManager.exe
+```
+Do not use sudo before mono, as this will create problems!
+Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loading. (I think those who dont use the steam version may be able to use WINE-GE)
+
+   ---
 
 <!-- Additional Info -->
 
@@ -42,6 +50,7 @@ For the latest version of ADOFAI, press `Esc` on main screen.
 (Last checked 25/2/2021) There is a case you should edit the `UnityModManagerConfig.xml` file because of code differences between the current(`1.11.3 r70~`) and past(`v1.11.1 r68`) versions.
 
 [Click here to check your game's version.](#How-to-check-your-games-version)
+
 
 ```xml
 <GameInfo Name="A Dance of Fire and Ice">
