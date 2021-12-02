@@ -14,13 +14,13 @@
 
 잘 이해가 되지 않으신다면, 아래 사진을 참고해보세요.
 
-![](../resources/use-2/image1.png)
+![](./resources/use-2/image1.png)
 
 ### 얼불춤 모드 설정
 
 만약 모드가 `UnityModManager` 안에서 사용자 지정 설정을 지원한다면, 모드 매니저를 `Ctrl + F10` 키로 열고 (기본값이며 언제든지 Settings 탭에서 여러분이 원하는 대로 키를 바꿀 수 있습니다), 설정이 있는 모드를 클릭해 모드를 설정할 수 있습니다. 예를 들어, `ADOFAI Tweaks` 모드의 내부 설정은 이렇게 보입니다:
 
-![](../resources/use-2/image2.png)
+![](./resources/use-2/image2.png)
 
 어떤 모드는 `UnityModManager` 외부에서 설정을 수정하도록 만들어진 경우도 있습니다. 이 경우, 모드와 함께 첨부된 설명을 읽어보시길 바랍니다.
 
@@ -30,7 +30,7 @@
 
 얼불춤 모드들은 `On/Off` 텍스트 밑에서 켜고 끌 수 있습니다. 모드가 어떤 상태인지는 옆 `Status`에서 확인 가능합니다.
 
-![](../resources/use-2/image3.png)
+![](./resources/use-2/image3.png)
 
 `Status` 정리표:
 

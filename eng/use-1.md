@@ -20,7 +20,7 @@
    - Choose `Assembly` in the `Installation Method` group.
    - After clicking the `Install` button, please check if notepad pops up after executing the game. If notepad pops up, it means something went wrong while editing `UnityModManagerConfig.xml`. If you can't see what's wrong and need help, you can always join the [ADOFAI Modding Community Discord](https://discord.gg/AGFXhCfyE5) and ask for help.
    - If you are having a hard time understanding, you can follow the same steps using image below. The correct sequence is Red → Blue → Green if you can't read small numbers well.
-     ![](../resources/use-1/image1.png)
+     ![](./resources/use-1/image1.png)
 
    
    Note! Linux users should download the `mono` package to use for UnityModManager, and run it from the terminal with 
@@ -39,10 +39,10 @@ Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loa
 #### How to check your game's version
 
 For older versions of ADOFAI, press `Esc` on main screen and go to `Settings`.
-![](../resources/use-1/image2.png)
+![](./resources/use-1/image2.png)
 
 For the latest version of ADOFAI, press `Esc` on main screen.
-![](../resources/use-1/image3.png)
+![](./resources/use-1/image3.png)
 
 #### File Editing (OUTDATED)
 

@@ -18,13 +18,13 @@
 
 The image below shows how UnityModManager should look like after installing a few mods.
 
-![](../resources/use-2/image1.png)
+![](./resources/use-2/image1.png)
 
 ### Configuring the mod
 
 If the mod supports custom settings in `UnityModManager`, you can press `Ctrl + F10` (this is the default keybind, you can change this in the `Settings` tab) then click on the sliders icon to configure it. For example, the settings for `ADOFAI Tweaks` look like this:
 
-![](../resources/use-2/image2.png)
+![](./resources/use-2/image2.png)
 
 Some mods may not have their settings in `UnityModManager`'s settings menu. You should read any instructions posted along with the mod file for how to change the settings.
 
@@ -40,7 +40,7 @@ You can toggle some mods by clicking the checkbox in the `On/Off` column.
 
 You can also check the status of the mod in the `Status` column.
 
-![](../resources/use-2/image3.png)
+![](./resources/use-2/image3.png)
 
 `Status` List:
 

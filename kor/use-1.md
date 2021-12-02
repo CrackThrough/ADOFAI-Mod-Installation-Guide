@@ -19,7 +19,7 @@
     * `Installation Method` 그룹 이내에서 `Assembly`를 선택해주세요.
     * `Install` 버튼을 누르신 후 얼불춤을 실행하시고 메모장에 오류가 뜨는지 확인해보세요. 오류가 뜬다면 뭔가 잘못 설정한게 있는지 확인해주세요. 만약 관련해 도움이 필요하다면 언제든지 [ADOFAI.gg 커뮤니티 디스코드](https://discord.gg/TKdpbUUfUa)를 참여해 도움을 받을 수 있습니다.
     * 글로 이해가 어려우시다면 아래 사진을 참고해보세요. 빨강 → 파랑 → 초록 순입니다.
-    ![](../resources/use-1/image1.png)
+    ![](./resources/use-1/image1.png)
 
 ---
 
@@ -28,10 +28,10 @@
 #### 게임 버전 확인
 
 오래된 버전의 얼불춤은 메인 화면에서 `Esc` 키를 누른 후, 설정 버튼을 누르면 좌측 하단에 표시됩니다.
-![](../resources/use-1/image2.png)
+![](./resources/use-1/image2.png)
 
 최근 버전의 얼불춤은 메인 화면에서 `Esc` 키를 누르면 좌측 하단에 표시됩니다.
-![](../resources/use-1/image3.png)
+![](./resources/use-1/image3.png)
 
 #### 파일 수정 (예전 버전 전용)
 
