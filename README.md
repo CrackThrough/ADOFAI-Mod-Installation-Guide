@@ -10,4 +10,4 @@ Thanks to:
 
 ### Where to seek for help
 
-If anything stated here doesn't work for your distro, feel free to join the [ADOFAI.gg Community Discord](https://discord.gg/TKdpbUUfUa) and ask for help in #modding-support channel or open an issue.
+If anything stated here doesn't work for your distro, feel free to join the [ADOFAI.gg Community Discord](https://discord.gg/TKdpbUUfUa) and ask for help in `#modding-support` channel or open an issue.
