@@ -79,7 +79,7 @@
 
 [혹은 이미 여기서 수정된 파일을 다운로드할 수 있습니다.](https://drive.google.com/file/d/1BZ6XJwMnb9KsKtLcuQ5JctRs81nw_60V/view?usp=sharing)
 
-__**또한, 파일을 교체하시거나 수정하신 이후 UnityModManager를 무조건 껐다 켜야 함을 숙지해 주세요.**__
+__**또한, 파일을 교체하시거나 수정하신 이후 `UnityModManager`를 무조건 껐다 켜야 함을 숙지해 주세요.**__
 
 ---
 

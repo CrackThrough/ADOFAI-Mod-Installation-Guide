@@ -11,7 +11,7 @@
 3. Click the `Install Mod` button or drag your .zip file into the `Drop zip files here` area.
 4. Check if you have the `OK` text in your mod's `Status`. If you don't have the text, then you should right click it and click `Install`.
    - If you still don't get the OK text, there's a high chance that it's a problem of the mod's file itself. Try contacting the mod developer or ask for help in the [ADOFAI.gg Community Discord](https://discord.gg/TKdpbUUfUa).
-5. If there is any update for the mod, right click the mod and click `Update to vX.X.X`. If the mod's latest version cannot be checked via UnityModManager, you need to download the updated .zip by yourself and apply it again.
+5. If there is any update for the mod, right click the mod and click `Update to vX.X.X`. If the mod's latest version cannot be checked via `UnityModManager`, you need to download the updated .zip by yourself and apply it again.
 
   Linux users; If ADOFAI Tweaks (or any mod) is reporting it cant read a DLL, use Proton-GE and manually re-extract the dll's it uses in
 `/[where steam is installed]/Steam/steamapps/common/A Dance Of Fire And Ice/Mods/AdofaiTweaks [or another mod]`

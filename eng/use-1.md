@@ -23,7 +23,7 @@
      ![](./resources/use-1/image1.png)
 
    
-   Note! Linux users should download the `mono` package to use for UnityModManager, and run it from the terminal with 
+   Note! Linux users should download the `mono` package to use for `UnityModManager`, and run it from the terminal with 
 ```shell
 mono /path/to/UnityModManager.exe
 ```
@@ -70,7 +70,7 @@ On any version `r68` and below, use the below settings.
 <UIStartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:After</UIStartingPoint>
 ```
 
-After any version `r69`, use the below settings. (You do not need to edit your file at all if you just downloaded UnityModManager.)
+After any version `r69`, use the below settings. (You do not need to edit your file at all if you just downloaded `UnityModManager`.)
 
 ```xml
 <StartingPoint>[Assembly-CSharp.dll]ADOStartup.Startup:Before</StartingPoint>
@@ -95,7 +95,7 @@ This is preview of your settings. Note that `your settings value..` is not the a
 
 [Alternatively, you can download a pre-edited version of the file.](https://drive.google.com/file/d/1BZ6XJwMnb9KsKtLcuQ5JctRs81nw_60V/view?usp=sharing)
 
-__**Note that you are REQUIRED to restart your UnityModManager after making changes to your settings file.**__
+__**Note that you are REQUIRED to restart your `UnityModManager` after making changes to your settings file.**__
 
 ---
 
