@@ -2,7 +2,7 @@
 
 <ins>[[< Previous Page]](./main.md)</ins> <ins>[[Next Page >]](./use-2.md)</ins>
 
-## How to install and configure UnityModManager for ADOFAI
+## Installing and configuring UnityModManager
 
 ### Installing UnityModManager
 
@@ -27,8 +27,8 @@
 ```shell
 mono /path/to/UnityModManager.exe
 ```
-Do not use sudo before mono, as this will create problems!
-Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loading. (I think those who dont use the steam version may be able to use WINE-GE)
+DO NOT use sudo before mono, as this will cause problems!
+Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loading. (I think those who dont use the steam version may be able to use WINE-GE.)
 
    ---
 
@@ -44,12 +44,13 @@ For older versions of ADOFAI, press `Esc` on main screen and go to `Settings`.
 For the latest version of ADOFAI, press `Esc` on main screen.
 ![](../resources/use-1/image3.png)
 
-#### File Editing
+#### File Editing (OUTDATED)
 
-**Case 1:**
-(Last checked 25/2/2021) There is a case you should edit the `UnityModManagerConfig.xml` file because of code differences between the current(`1.11.3 r70~`) and past(`v1.11.1 r68`) versions.
+**You should only do this if both installed mods and mod manager doesn't work and notepad pops up!**
 
-[Click here to check your game's version.](#How-to-check-your-games-version)
+There is a case you should edit the `UnityModManagerConfig.xml` file because of codebase differences between the current(`1.11.3 r70~`) and past(`v1.11.1 r68`) versions.
+
+[Click here to see how you can check your game's version.](#How-to-check-your-games-version)
 
 
 ```xml
@@ -60,16 +61,16 @@ For the latest version of ADOFAI, press `Esc` on main screen.
 </GameInfo>
 ```
 
-Find the lines with above contents, and edit the `StartingPoint` and `UIStartingPoint` inside.
+Find the lines with above contents, and edit the nested `StartingPoint` and `UIStartingPoint`.
 
-With version `r68` and below, use the below settings.
+On any version `r68` and below, use the below settings.
 
 ```xml
 <StartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:Before</StartingPoint>
 <UIStartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:After</UIStartingPoint>
 ```
 
-After version `r69`, use the below settings. (You do not need to edit your file at all if you just downloaded UnityModManager.)
+After any version `r69`, use the below settings. (You do not need to edit your file at all if you just downloaded UnityModManager.)
 
 ```xml
 <StartingPoint>[Assembly-CSharp.dll]ADOStartup.Startup:Before</StartingPoint>
@@ -92,16 +93,9 @@ This is preview of your settings. Note that `your settings value..` is not the a
 </GameInfo>
 ```
 
-If you don't know how this XML format works, **try not to put settings value in the comments.**
-
 [Alternatively, you can download a pre-edited version of the file.](https://drive.google.com/file/d/1BZ6XJwMnb9KsKtLcuQ5JctRs81nw_60V/view?usp=sharing)
 
-__**Also, You are REQUIRED to restart your UnityModManager after making changes to your file.**__
-
-**Case 2:**
-If the game is not added in UnityModManager, you have to add it by yourself.
-
-Just copy other game's data and replace the value with your needs.
+__**Note that you are REQUIRED to restart your UnityModManager after making changes to your settings file.**__
 
 ---
 
