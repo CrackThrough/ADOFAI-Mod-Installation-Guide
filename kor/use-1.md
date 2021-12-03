@@ -5,10 +5,8 @@
 
 ### UnityModManager 다운로드하기
 
-1. `UnityModManager` 설치 링크: https://www.nexusmods.com/site/mods/21
-    * 링크를 타고 들어간 후 맨 오른쪽 위 버튼에서 계정이 없으시다면 계정을 생성한 후 로그인 하세요.
-    * 로그인 후 `Download:` 텍스트 옆 `Manual` 버튼을 클릭하세요.
-    * `Slow Download` 버튼을 클릭하세요.
+1. `UnityModManager` 설치 링크: https://github.com/newman55/unity-mod-manager
+    * **Dropbox** 텍스트를 클릭해 파일을 다운로드 받으실 수 있습니다.
 2. 다운받은 `UnityModManager.zip` 파일을 압축 해제하세요.
     * **절대로** 얼불춤 폴더 내에서 압축 해제하시면 안됩니다!
 3. 필요한 경우 [자신의 게임 버전](#게임-버전-확인)에 맞게 `UnityModManagerConfig.xml` 파일을 [수정](#파일-수정)하시고, 압축 푼 폴더 안에 있는 `UnityModManager.exe` 파일을 실행하세요.

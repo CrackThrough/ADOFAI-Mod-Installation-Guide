@@ -6,10 +6,8 @@
 
 ### Installing UnityModManager
 
-1. `UnityModManager` installation link: https://www.nexusmods.com/site/mods/21
-   - Click the link and register if you do not have account.
-   - After logging in, click `Manual` button next to `Download:` text.
-   - Click `Slow Download`.
+1. `UnityModManager` installation link: https://github.com/newman55/unity-mod-manager
+   - Click the **Dropbox** text to download the file.
 2. Unzip the downloaded `UnityModManager.zip`.
    - **Do not** unzip the file inside ADOFAI's directory!
 3. If needed, [edit](#File-Editing) the `UnityModManagerConfig.xml` file based on [your game's version](#How-to-check-your-games-version) and execute the `UnityModManager.exe` file.
