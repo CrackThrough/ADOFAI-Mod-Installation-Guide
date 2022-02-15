@@ -1,6 +1,10 @@
 # 한국어 모딩 가이드
 <ins>[[ < 이전 페이지 ]](./main.md)</ins> <ins>[[ 다음 페이지 > ]](./use-2.md)</ins>
-
+   
+## 개요
+    
+불과 얼음의 춤에 모드를 적용하려면 UnityModManager라는 프로그램을 다운로드해야 합니다. 이 페이지에서는 UnityModManager를 다운로드하고 설정하는 방법을 설명합니다.
+   
 ## UnityModManager 설치 방법
 
 ### UnityModManager 다운로드하기
