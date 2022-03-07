@@ -2,17 +2,19 @@
 
 [[ < 이전 페이지 ]](./dev-1.md) [[ 다음 페이지 > ]](./dev-3.md)
 
-- [모드의 기본적인 틀 구축](#모드의-기본적인-틀-구축)
-  - [UnityModManager.ModEntry 세부 사항](#unitymodmanagermodentry-세부-사항)
 - [이용자 배려](#이용자-배려)
   - [독해, 가독성 문제 최소화](#독해-가독성-문제-최소화)
   - [접근성](#접근성)
+- [모드의 기본적인 틀 구축](#모드의-기본적인-틀-구축)
+  - [UnityModManager.ModEntry 세부 사항](#unitymodmanagermodentry-세부-사항)
+- [빌드와 모드 적용 및 실행](#빌드와-모드-적용-및-실행)
 
 <details>
 <summary>이 페이지는 아직 완성되지 않았습니다. 펼쳐서 현재 문서에서 다룰 내용과 링크를 확인할 수 있습니다.</summary>
 
 <ul>
-    <li>유니티 모드 만들기 튜토리얼: <a href="https://wiki.nexusmods.com/index.php/How_to_create_mod_for_unity_game">https://wiki.nexusmods.com/index.php/How_to_create_mod_for_unity_game</a>
+    <li>유니티 모드 만들기 튜토리얼: <a href="https://wiki.nexusmods.com/index.php/How_to_create_mod_for_unity_game">
+    https://wiki.nexusmods.com/index.php/How_to_create_mod_for_unity_game</a>
     <ul>
         <li>모드를 만들 때 클래스들의 형태 및 필수 조건 등을 설명하면서 Reflection을 이용해 더 깔끔하게 정리하면 특정 기능을 중점으로 한 프로그래밍이 가능함을 설명.</li>
         <li>Reflection 및 Attribute에 대한 소개 또한 포함.</li>
@@ -35,7 +37,8 @@
         <li>패치의 원리에 대한 설명 또한 포함.</li>
         </ul>
     </li>
-    <li>C# Reflection: <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection">https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection</a></li>
+    <li>C# Reflection: <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection">
+    https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection</a></li>
     <li>dnSpy: <a href="https://github.com/dnSpy/dnSpy">https://github.com/dnSpy/dnSpy</a>
         <ul>
         <li>프로그램을 이용해 게임의 코드를 읽는 방법 소개.</li>
@@ -52,6 +55,22 @@
 </details>
 
 ---
+
+## 이용자 배려
+
+모드를 이용하는 사람들을 배려하며 모드를 설계하는 것은 바람직한 일입니다. 모드를 제작하기 전에, 이용자를 배려할 수 있는 방법을 알아 봅시다.
+
+**(참고) 아래 내용을 전부 준수해야 모드를 출시할 수 있는 것은 아닙니다.**
+
+### 독해, 가독성 문제 최소화
+
+- 생소한 단어 사용을 최소화하고, 사용한다면 설명을 덧붙이세요.
+  - 개발 용어는 지양하고, 사람들이 알기 쉬운 용어를 사용하세요. (ex. 스프라이트 → 사진, 콘텐츠)
+- 되도록 공식 용어를 사용하세요.
+
+### 접근성
+
+- 광과민성 발작을 일으킬 수 있는 콘텐츠는 표시 이전에 경고하거나, 표시 버튼 등의 상호 작용을 통해서만 표시될 수 있도록 하세요.
 
 ## 모드의 기본적인 틀 구축
 
@@ -125,40 +144,33 @@ namespace ExampleMod
 }
 ```
 
-
 ### UnityModManager.ModEntry 세부 사항
 
-| Name            	| Description                                                                                                                        	|
-|---------------	|-----------------------------------------------------------------------------------------------------------------------------	|
-| Info          	| Info.json의 내용입니다.                                                                                                     	|
-| Path          	| 모드가 있는 경로입니다. 예를 들어, "Steam\steamapps\common\A Dance of Fire and Ice\Mods\ExampleMod\"같은 형식으로 나옵니다. 	|
-| Active        	| 모드가 활성화 됐는지 여부입니다.                                                                                            	|
-| Logger        	| Log.txt 파일에 로그를 쓰는 함수입니다.                                                                                       	|
-| OnToggle      	| 모드가 켜지거나 꺼질 때 호출됩니다.                                                                                         	|
-| OnGUI         	| 게임 내의 모드 매니저 설정에서, 이 모드의 설정 UI가(이하 "GUI")이 만들어질 때 호출됩니다.                                    	|
-| OnSaveGUI     	| GUI에서 Save 버튼을 누를 때 호출됩니다.                                                                                     	|
-| OnUpdate      	| MonoBehaviour.Update에 의해 호출됩니다. MonoBehaviour.Update는 MonoBehaviour가 켜져 있다면 **매 프레임마다** 호출됩니다.                                                                                     	|
-| OnLateUpdate  	| MonoBehaviour.LateUpdate에 의해 호출되지만, 모드에선 주로 쓰이지 않습니다.                                                  	|
-| OnFixedUpdate 	| MonoBehaviour.FixedUpdate에 의해 호출되지만, 모드에선 주로 쓰이지 않습니다.                                                 	|
-| OnShowGUI     	| GUI가 열릴 때 호출됩니다.                                                                                                   	|
-| OnHideGUI     	| GUI가 닫힐 때 호출됩니다.                                                                                                   	|
+| Name            	| Description                                                                                                                  	|
+|---------------	|-------------------------------------------------------------------------------------------------------------------------------	|
+| Info          	| Info.json의 내용입니다.                                                                                                       	|
+| Path          	| 모드가 있는 경로입니다. 예를 들어, "Steam\steamapps\common\A Dance of Fire and Ice\Mods\ExampleMod\"같은 형식으로 나옵니다.     	|
+| Active        	| 모드가 활성화 됐는지 여부입니다.                                                                                              	|
+| Logger        	| Log.txt 파일에 로그를 쓰는 함수입니다.                                                                                         	|
+| OnToggle      	| 모드가 켜지거나 꺼질 때 호출됩니다.                                                                                            	|
+| OnGUI         	| 게임 내의 모드 매니저 설정에서, 이 모드의 설정이 열려있을 때 **매 프레임마다** 호출됩니다.                                        	|
+| OnSaveGUI     	| 게임 내의 모드 매니저 설정에서 Save 버튼을 누를 때 호출됩니다.                                                                    	|
+| OnUpdate      	| MonoBehaviour.Update에 의해 호출됩니다. MonoBehaviour.Update는 MonoBehaviour가 켜져 있다면 **매 프레임마다** 호출됩니다.          	|
+| OnLateUpdate  	| MonoBehaviour.LateUpdate에 의해 호출됩니다. MonoBehaviour.LateUpdate는 MonoBehaviour.Update 이후에 호출됩니다.                   	|
+| OnFixedUpdate 	| MonoBehaviour.FixedUpdate에 의해 호출됩니다.                                                                                     	|
+| OnShowGUI     	| 게임 내의 모드 매니저 설정에서, 이 모드의 설정이 열릴 때 호출됩니다.                                                                	|
+| OnHideGUI     	| 게임 내의 모드 매니저 설정에서, 이 모드의 설정이 닫힐 때 호출됩니다.                                                              	|
 
-## 이용자 배려
+## 빌드와 모드 적용 및 실행
 
+1. 프로젝트를 빌드합니다.
+2. A Dance of Fire and Ice 게임 폴더를 엽니다.
+3. Mods 폴더를 엽니다.
+4. 모드 이름으로 된 폴더를 생성합니다.
+5. 그 폴더 안에 Info.json 파일과 빌드된 dll 파일을 넣습니다.
+6. 게임을 실행합니다.
 
-모드를 이용하는 사람들을 배려하며 모드를 설계하는 것은 바람직한 일입니다.
-
-**아래 내용을 전부 준수해야 모드를 출시할 수 있는 것은 아닙니다.**
-
-### 독해, 가독성 문제 최소화
-
-- 생소한 단어 사용을 최소화하고, 사용한다면 설명을 덧붙이세요.
-  - 개발 용어는 지양하고, 사람들이 알기 쉬운 용어를 사용하세요. (ex. 스프라이트 → 사진, 콘텐츠)
-- 되도록 공식 용어를 사용하세요.
-
-### 접근성
-
-- 광과민성 발작을 일으킬 수 있는 콘텐츠는 표시 이전에 경고하거나, 표시 버튼 등의 상호 작용을 통해서만 표시될 수 있도록 하세요.
+가이드를 정상적으로 따라오면 문제 없이 실행될 것입니다.
 
 ---
 
