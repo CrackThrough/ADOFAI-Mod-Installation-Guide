@@ -1,12 +1,14 @@
 # ADOFAI Mod Installation Guide
 ### 한국어: [여기를 클릭하세요!](./kor/main.md)
 ### English: [Click here!](./eng/main.md)
+### 日本語: [ここをクリック！] (./jap/main.md)
 
 ### Contribution
 
 Thanks to:
 - [PizzaLovers007](https://github.com/PizzaLovers007) for helping English translations!
 - [Gotchfutchian](https://github.com/Gotchfutchian) for adding all the Linux related contents.
+- [sjk](https://github.com/sjkim04) for helping with Japanese translations
 
 ### Where to seek for help
 
