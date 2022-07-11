@@ -26,7 +26,9 @@
 mono /path/to/UnityModManager.exe
 ```
 DO NOT use sudo before mono, as this will cause problems!
-Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loading. (I think those who dont use the steam version may be able to use WINE-GE.)
+~~Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loading. (I think those who dont use the steam version may be able to use WINE-GE.)~~
+
+Currently, there is a native Linux version of ADOFAI in the alpha branch, but it is unconfirmed that mods will work. If you found something, tell us via opening an issue/PR!
 
    ---
 
