@@ -9,11 +9,13 @@
     * **Dropbox**をクリックしてファイルをダウンロードできます。
 2. ダウンロードした`UnityModManager.zip`ファイルを解凍してください。
     * **絶対に**ADOFAIのフォルダ内で解凍しないでください！
-3. 必要な場合、[自分のゲームバージョン]()に合うように`UnityModManagerConfig.xml`ファイルを[編集]()し、解凍されたフォルダ内の`UnityModManager.exe`プログラムを実行してください。
+3. 必要な場合、[自分のゲームバージョン](#ゲームバージョンの確認)に合うように`UnityModManagerConfig.xml`ファイルを<!--[-->編集<!--]()-->し、解凍されたフォルダ内の`UnityModManager.exe`プログラムを実行してください。
 4. `UnityModManager`プログラムを設定してください。
-    * `Install`タブをクリックしてください。  * `Game`の横のドロップダウンをクリックし、`A Dance of Fire and Ice`を選択してください。（もし違うゲームのMODを使う場合は、その名前を選択すればOKです。）
+    * `Install`タブをクリックしてください。
+    * `Game`の横のドロップダウンをクリックし、`A Dance of Fire and Ice`を選択してください。（もし違うゲームのMODを使う場合は、その名前を選択すればOKです。）
     * `Folder`の横のボタンをクリックし、ADOFAIがあるフォルダを選択し、OKを押してください。
-    * `Installation Method`で`Assembly`を選択してください。   * `Install` 버ボタンを、メモ帳にエラーが表示されるか確認してみてください。もしエラーが表示される場合は、設定が合っているか確認してみてください。いつでも[ADOFAI.ggコミュニティDiscord](https://discord.gg/TKdpbUUfUa)に参加してサポートを受けられます。
+    * `Installation Method`で`Assembly`を選択してください。
+    * `Install` ボタンを押し、メモ帳にエラーが表示されるか確認してみてください。もしエラーが表示される場合は、設定が合っているか確認してみてください。いつでも[ADOFAI.ggコミュニティDiscord](https://discord.gg/TKdpbUUfUa)に参加してサポートを受けられます。
     * 文字で理解できなかった場合は、下の画像を御覧ください。赤→青→緑の順番で操作してください。
     ![](./resources/use-1/image1.png)
 
@@ -25,7 +27,9 @@ mono /path/to/UnityModManager.exe
 を使って実行できます。
 
 **絶対に**sudoをmonoと一緒に使わないでください。問題が発生する場合があります。
+
 ~~ADOFAIは"Proton-GE"を使って実行してください。MODが正確にロードされます。（Steamバージョンを使わない人はWINE-GEを使えばいいと思います。）~~
+
 現在、alphaブランチにnativeのLinux版がリリースされましたが、MODが作動するかは確認できていません。もし確認された場合はIssue/PRを開いてお知らせください！
 
    ---

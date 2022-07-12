@@ -1,7 +1,7 @@
 # ADOFAI Mod Installation Guide
 ### 한국어: [여기를 클릭하세요!](./kor/main.md)
 ### English: [Click here!](./eng/main.md)
-### 日本語: [ここをクリック！] (./jap/main.md)
+### 日本語: [ここをクリック！](./jap/main.md)
 
 ### Contribution
 
