@@ -32,7 +32,7 @@ Some mods may not have their settings in `UnityModManager`'s settings menu. You 
 
 If you see a download icon after the mod's name, it means there's an update available.
 
-To update the mod, you should close the game first, open `UnityModManager.exe`, then update the mod from step 5 above.
+To update the mod, you should close the game first, open `UnityModManager.exe`, open the `Mods` tab, right-click the mod, and click `Update to vX.X.X`.
 
 ### Toggling ADOFAI mods
 
