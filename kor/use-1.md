@@ -20,13 +20,16 @@
     ![](./resources/use-1/image1.png)
 
    
-   주의: Linux 사용자들은 `UnityModManager`를 사용하기 위해서는 `mono` 패키지를 다운로드해야 합니다. 그 후, 터미널에서
+주의: Linux 사용자들은 `UnityModManager`를 사용하기 위해서는 `mono` 패키지를 다운로드해야 합니다. 그 후, 터미널에서
 ```shell
 mono /path/to/UnityModManager.exe
 ```
 를 사용하여 실행할 수 있습니다.
 
-**절대로** sudo를 mono와 같이 사용하지 마세요. 문제가 발생할 수 있습니다.
+만약 위 방법으로 문제가 발생한다면, 다음과 같이 sudo와 같이 사용해 보세요.
+```shell
+sudo mono /path/to/UnityModManager.exe
+```
 
 ~~얼불춤은 "Proton-GE"를 사용해서 실행해 주세요. GitHub에 있으며, 알맞은 모드 로딩을 합니다. (Steam 버전을 사용하지 않는 사용자들은 WINE-GE를 사용해도 될 수도 있습니다.)~~
 

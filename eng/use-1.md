@@ -18,14 +18,18 @@
    - Choose `Assembly` in the `Installation Method` group.
    - After clicking the `Install` button, please check if notepad pops up after executing the game. If notepad pops up, it means something went wrong while editing `UnityModManagerConfig.xml`. If you can't see what's wrong and need help, you can always join the [ADOFAI Modding Community Discord](https://discord.gg/AGFXhCfyE5) and ask for help.
    - If you are having a hard time understanding, you can follow the same steps using image below. The correct sequence is Red → Blue → Green if you can't read small numbers well.
+
      ![](./resources/use-1/image1.png)
 
    
-   Note! Linux users should download the `mono` package to use for `UnityModManager`, and run it from the terminal with 
+Note! Linux users should download the `mono` package to use for `UnityModManager`, and run it from the terminal with 
 ```shell
 mono /path/to/UnityModManager.exe
 ```
-DO NOT use sudo before mono, as this will cause problems!
+If you have problems while using the above method, you may have to use the command with sudo:
+```shell
+sudo mono /path/to/UnityModManager.exe
+```
 ~~Also, Run ADOFAI under "Proton-GE", its on github and allows for correct mod loading. (I think those who dont use the steam version may be able to use WINE-GE.)~~
 
 Currently, there is a native Linux version of ADOFAI in the alpha branch, but it is unconfirmed that mods will work. If you found something, tell us via opening an issue/PR!

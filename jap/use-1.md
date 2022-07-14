@@ -20,13 +20,16 @@
     ![](./resources/use-1/image1.png)
 
    
-   注意: Linux利用者は、`UnityModManager`を利用するために`mono`パッケージが必要となります。インストール後、ターミナルで
+注意: Linux利用者は、`UnityModManager`を利用するために`mono`パッケージが必要となります。インストール後、ターミナルで
 ```shell
 mono /path/to/UnityModManager.exe
 ```
 を使って実行できます。
 
-**絶対に**sudoをmonoと一緒に使わないでください。問題が発生する場合があります。
+上の方法で問題が生じた場合は、sudoを一緒に使ってみてください。
+```shell
+sudo mono /path/to/UnityModManager.exe
+```
 
 ~~ADOFAIは"Proton-GE"を使って実行してください。MODが正確にロードされます。（Steamバージョンを使わない人はWINE-GEを使えばいいと思います。）~~
 
