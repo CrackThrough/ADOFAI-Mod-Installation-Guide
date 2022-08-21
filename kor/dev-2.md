@@ -74,75 +74,63 @@
 
 ## 모드의 기본적인 틀 구축
 
-Load 메서드는 게임 실행 시 UnityModManager가 호출할 함수입니다. `Info.json`의 `EntryMethod`에 들어가는 값이 이 메서드입니다.
-
-modEntry 파라미터에는 [모드에 대한 데이터](#unitymodmanagermodentry-세부-사항)가 인자로 들어갑니다.
+프로젝트를 생성할 때 같이 생긴 `Class1.cs`에 코드를 작성하겠습니다. 원한다면 알아보기 쉽게 이름을 바꿀 수도 있습니다.
 
 ```cs
-using UnityEngine;
+using System.Reflection;
 using UnityModManagerNet;
+using HarmonyLib;
 
 namespace ExampleMod
 {
     static class Main
     {
-        static void Load(UnityModManager.ModEntry modEntry) 
-        {
-            // 내용
-        }
-
-        // void가 아닌 bool을 반환하도록 만들 수 있습니다.
-        static bool Load(UnityModManager.ModEntry modEntry)
-        {
-            // 내용
-
-            return true;
-            // 반환된 값이 false라면 UnityModManager에서 모드가 정상적으로 로드되지 않았다고 표시됩니다.
-        }
-    }
-}
-```
-
----
-
-아래 내용은 모드가 켜거나 끌 때의 핸들러입니다. 이 내용을 추가하지 않으면 모드를 켜거나 끌 때 마다 게임을 재시작해야 합니다.
-
-
-```cs
-using UnityEngine;
-using UnityModManagerNet;
-
-namespace ExampleMod
-{
-    static class Main
-    {
-        public static bool enabled;
+        public static UnityModManager.ModEntry.ModLogger Logger;
+        public static Harmony harmony;
+        public static bool IsEnabled;
 
         static bool Load(UnityModManager.ModEntry modEntry)
         {
+            // 이 메서드는 게임 실행 시 UnityModManager가 호출할 함수입니다.
+            // Info.json의 EntryMethod 값을 바꾸어 다른 메서드가 호출되게 설정할 수 있습니다.
+
+            Logger = modEntry.Logger;
             modEntry.OnToggle = OnToggle;
+
+            harmony = new Harmony(modEntry.Info.Id);
+
             return true;
+            // 반환된 값이 false라면 UnityModManager가 사용자에게 모드가 정상적으로 로드되지 않았다고 표시합니다.
+            // 굳이 필요없다고 느껴지면 삭제하고 반환 값을 void로 바꾸어도 됩니다.
         }
 
-        // 이 메서드는 모드를 켜거나 끌 때 호출됩니다.
+        // 이 메서드는 모드를 켜거나 끌 때 호출됩니다. 이 메서드가 없으면 모드를 켜거나 끌 때 마다 게임을 재시작해야 합니다.
         // value 파라미터에는 모드가 켜졌는지(true) 꺼졌는지(false)가 인자로 들어갑니다.
         static bool OnToggle(UnityModManager.ModEntry modEntry, bool value)
         {
+            IsEnabled = value;
+
             if (value)
             {
-                // 모드를 켜기 위해 필요한 과정을 수행합니다.
+                // 모드가 켜질 때 아래 코드를 실행합니다.
+                harmony.PatchAll(Assembly.GetExecutingAssembly());
             }
             else
             {
-                // 모드를 끄기 위해 필요한 과정을 수행합니다.
+                // 모드가 꺼질 때 아래 코드를 실행합니다.
+                harmony.UnpatchAll(modEntry.Info.Id);
             }
             
-            enabled = value;
-            return true; // 반환된 값이 true라면, 모드 상태를 전환합니다. false라면 전환하지 않습니다.
+            return true;
+            // 반환된 값이 true라면, 모드 상태를 전환합니다. false라면 전환하지 않습니다.
         }
     }
 }
 ```
+
+위 코드에서 modEntry 파라미터에는 [모드에 대한 데이터](#unitymodmanagermodentry-세부-사항)가 인자로 들어갑니다.
+
+harmony에 대한 내용은 추후 다루겠습니다.
 
 ### UnityModManager.ModEntry 세부 사항
 
@@ -177,6 +165,10 @@ namespace ExampleMod
 위 내용 중 일부는 다음 문서를 번역한 내용을 담고 있습니다.
 
 * NexusMods 위키의 [How to create mod for unity game 문서](https://wiki.nexusmods.com/index.php/How_to_create_mod_for_unity_game)
+
+위 내용 중 일부는 원저작자의 허락을 맡고 수정 및 가공한 내용을 담고 있습니다.
+
+* GitHub 리포지토리 [NoBrain0917](https://github.com/NoBrain0917)/[ADOFAI-Mod-Development-Guide](https://github.com/NoBrain0917/ADOFAI-Mod-Development-Guide/blob/main/dev2.md)
 
 ---
 

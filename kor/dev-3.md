@@ -23,6 +23,8 @@ IMGUI는 OnGUI()라는 특수 메서드를 사용합니다. `OnGUI` 메서드는
 우선 Reference에 `UnityEngine.CoreModule`과 `UnityEngine.IMGUIModule`을 추가합니다.
 
 ```cs
+using UnityEngine;
+
 (생략)
 
     static bool Load(UnityModManager.ModEntry modEntry)
@@ -43,12 +45,6 @@ IMGUI는 OnGUI()라는 특수 메서드를 사용합니다. `OnGUI` 메서드는
 위 코드를 차례차례 살펴 보면,
 * `OnGUI` 메서드를 `modEntry.OnGUI`에 대입합니다.
 * `OnGUI` 메서드는 "테스트 라벨"이라는 텍스트가 쓰여진 라벨을 생성합니다.
-
-음, 그런데 `OnGUI` 메서드는 매 프레임마다 실행된다고 하지 않았나요?
-
-그렇습니다. 지금 저 코드는 다시 말해 **매 프레임마다 라벨을 만들고 폐기하는 극도로 비효율적인 코드**입니다. 그래서 GUILayout을 많이 사용하면 프레임 드롭이 심해집니다.
-
-하지만 괜찮습니다. 사람들이 게임 플레이 중에 모드 설정창을 열어 보지는 않으니, 프레임 드롭을 체감하기는 힘듭니다.
 
 ---
 
