@@ -31,7 +31,7 @@
    > ℹ️ **참고**  
    > 윈도우가 실행을 차단한다면 [UnityModManager.exe를 실행하면 윈도우가 실행을 차단함](#문제-해결-unitymodmanagerexe를-실행하면-윈도우가-실행을-차단함) 문단을 참고해 보세요.
 
-4. 창 중간 쯤에 있는 'Game' 오른쪽의 드롭다운 누르고, 'A Dance of fire and Ice를 선택합니다. 이미 선택돼 있다면 건너 뛰어도 됩니다.  
+4. 창 중간 쯤에 있는 'Game' 오른쪽의 드롭다운을 누르고, 'A Dance of fire and Ice'를 선택합니다. 이미 선택돼 있다면 건너 뛰어도 됩니다.  
    ![](./resources/use-1/umm-game-dropdown.png)
 
 6. 'Game' 아래에 있는 'Folder' 오른쪽의 버튼을 누르고, 얼불춤 게임 실행 파일이 있는 폴더를 선택하고 '확인' 버튼을 누릅니다. 이미 선택돼 있다면 건너 뛰어도 됩니다.  
