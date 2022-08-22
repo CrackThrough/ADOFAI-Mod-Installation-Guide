@@ -18,3 +18,4 @@ Thanks to:
 - [PizzaLovers007](https://github.com/PizzaLovers007) for helping English translations!
 - [Gotchfutchian](https://github.com/Gotchfutchian) for adding all the Linux related contents.
 - [sjk](https://github.com/sjkim04) for helping with Japanese translations
+- [ppapman](https://github.com/ppapman1) for rewriting entirety of the Korean installation guide 
