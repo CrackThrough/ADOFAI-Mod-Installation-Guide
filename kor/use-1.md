@@ -1,6 +1,10 @@
 # 한국어 모딩 가이드 <!-- omit in toc -->
 <ins>[[ < 이전 페이지 ]](./main.md)</ins> <ins>[[ 다음 페이지 > ]](./use-2.md)</ins>
 
+> [!WARNING]
+> 이 가이드는 오래되었습니다!
+> 새로운 모드 설치 가이드는 https://adof.ai/mod 에서 확인하세요.
+
 ### 목차 <!-- omit in toc -->
 - [UnityModManager에 대해](#unitymodmanager에-대해)
 - [UnityModManager 설치하기](#unitymodmanager-설치하기)
