@@ -1,5 +1,9 @@
 # ADOFAI Mod Installation Guide
 
+> [!WARNING]
+> 이 가이드는 오래되었습니다!
+> 새로운 모드 설치 가이드는 https://adof.ai/mod 에서 확인하세요.
+
 ### 한국어: [여기를 클릭하세요!](./kor/main.md)
 ### English: [Click here!](./eng/main.md)
 ### 日本語: [ここをクリック！](./jap/main.md)

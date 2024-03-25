@@ -2,6 +2,9 @@
 <ins>[[ < 이전 페이지 ]](../README.md)</ins>
 
 ## 모드 사용 및 설치 설명
+> [!WARNING]
+> 이 가이드는 오래되었습니다!
+> 새로운 모드 설치 가이드는 https://adof.ai/mod 에서 확인하세요.
 1. [UnityModManager 설치 방법](./use-1.md)
 2. [모드 적용 및 사용 방법](./use-2.md)
 
